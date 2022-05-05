@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".FormularioActivity">
+
+    <LinearLayout
+        android:id="@+id/verticalLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:stretchColumns="1" >
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/ViewLocal"
+                android:layout_width="319dp"
+                android:layout_height="wrap_content"
+                android:text="Localização"
+                android:textColor="@android:color/black"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/TextLocal"
+                android:layout_width="301dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_caixa_texto"
+                android:ems="10"
+                android:hint="Inserir endereço"
+                android:inputType="textPersonName"
+                android:padding="10dp" />
+        </TableRow>
+
+        <TableRow>
+        <RadioButton
+            android:id="@+id/radioButtonLocal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Utilizar a localização atual (GPS)"
+            android:textColor="@android:color/black"
+            android:textSize="18dp" />
+        </TableRow>
+
+        <TableRow>
+        <TextView
+            android:id="@+id/ViewTipo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Tipo de Agressão"
+            android:textColor="@android:color/black"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+        <RadioGroup
+            android:id="@+id/GroupTipo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioButtonTipo1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Assédio"
+                android:textColor="@android:color/black"
+                android:textSize="18dp" />
+
+            <RadioButton
+                android:id="@+id/radioButtonTipo2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Abuso"
+                android:textColor="@android:color/black"
+                android:textSize="18dp" />
+
+        </RadioGroup>
+        </TableRow>
+
+        <TableRow>
+        <TextView
+            android:id="@+id/ViewEstatura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Estatura do Agressor"
+            android:textColor="@android:color/black"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+        <RadioGroup
+            android:id="@+id/GroupEstatura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioButtonEstatura1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Baixa"
+                android:textColor="@android:color/black"
+                android:textSize="18dp" />
+
+            <RadioButton
+                android:id="@+id/radioButtonEstatura2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Média"
+                android:textColor="@android:color/black"
+                android:textSize="18dp" />
+
+            <RadioButton
+                android:id="@+id/radioButtonEstatura3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alta"
+                android:textColor="@android:color/black"
+                android:textSize="18dp" />
+        </RadioGroup>
+        </TableRow>
+
+        <TableRow>
+        <TextView
+            android:id="@+id/ViewPele"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Tom da Pele"
+            android:textColor="@android:color/black"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+        <RadioGroup
+            android:id="@+id/GroupPele"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioButtonPele1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Clara"
+                android:textColor="@android:color/black"
+                android:textSize="18dp" />
+
+            <RadioButton
+                android:id="@+id/radioButtonPele2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Parda"
+                android:textColor="@android:color/black"
+                android:textSize="18dp" />
+
+            <RadioButton
+                android:id="@+id/radioButtonPele3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Escura"
+                android:textColor="@android:color/black"
+                android:textSize="18dp" />
+        </RadioGroup>
+        </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/ViewCabelo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Coloração do Cabelo"
+                    android:textColor="@android:color/black"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+                <RadioGroup
+                    android:id="@+id/GroupCabelo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/radioButtonCabelo1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Castanho"
+                        android:textColor="@android:color/black"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonCabelo2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Preto"
+                        android:textColor="@android:color/black"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonCabelo3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Loiro"
+                        android:textColor="@android:color/black"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonCabelo4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ruivo"
+                        android:textColor="@android:color/black"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonCabelo5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Colorido"
+                        android:textColor="@android:color/black"
+                        android:textSize="18dp" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow>
+
+                <EditText
+                    android:id="@+id/TextObervacoes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_caixa_texto"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:hint="Descreva brevemente as vestes do agressor"
+                    android:inputType="textMultiLine"
+                    android:padding="10dp"
+                    android:textColor="@android:color/black" />
+            </TableRow>
+
+        <TableRow>
+            <Button
+                android:id="@+id/buttonEnviar"
+                android:layout_width="333dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="abrirMapa"
+                android:text="Enviar"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+        </TableRow>
+
+         <TableRow>
+
+             <Button
+                 android:id="@+id/buttonCancelar"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="20dp"
+                 android:onClick="abrirMapa"
+                 android:text="Cancelar"
+                 android:textColor="@android:color/black"
+                 android:textStyle="bold" />
+        </TableRow>
+
+
+
+    </TableLayout>
+    </LinearLayout>
+
+</ScrollView>
